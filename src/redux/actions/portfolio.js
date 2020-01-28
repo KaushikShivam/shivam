@@ -1,4 +1,4 @@
-import { GET_PORTFOLIOS, GET_TOP_PORTFOLIOS } from './types';
+import { GET_PORTFOLIOS, GET_PORTFOLIO, GET_TOP_PORTFOLIOS } from './types';
 import portfolios from './../../data/portfolios';
 
 export const getPortfolios = () => dispatch => {
@@ -13,5 +13,13 @@ export const getTopPortfolios = () => dispatch => {
   dispatch({
     type: GET_TOP_PORTFOLIOS,
     payload: sortedPortfolio.slice(0, 6)
+  });
+};
+
+export const getPortfolio = id => dispatch => {
+  const portfolio = portfolios.find(p => p.rating === id);
+  dispatch({
+    type: GET_PORTFOLIO,
+    payload: portfolio
   });
 };
