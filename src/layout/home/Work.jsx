@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import { getTopPortfolios } from './../../redux/actions/portfolio';
 
-// import PortfolioItem from '../../components/PortfolioItem';
+import PortfolioItem from '../../components/PortfolioItem';
 
 const Work = ({ topPortfolios, getTopPortfolios }) => {
   useEffect(() => {
@@ -34,11 +34,9 @@ const Work = ({ topPortfolios, getTopPortfolios }) => {
           </div>
           <div className="col-12">
             <div className="row mt-5">
-              {console.log(topPortfolios)}
-              {/* {portfolios.map(portfolio => (
-                // <PortfolioItem key={portfolio.name} {...portfolio} />
-                <p>{portfolio.name}</p>
-              ))} */}
+              {topPortfolios.map(portfolio => (
+                <PortfolioItem key={portfolio.name} {...portfolio} />
+              ))}
             </div>
           </div>
         </div>
