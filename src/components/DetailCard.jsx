@@ -11,13 +11,12 @@ const DetailCard = () => {
             <p className="DetailCard__company">Corp Project</p>
             <hr className="my-4" />
             <div className="DetailCard__text">
-              <p>
-                Claritas est etiam processus dynamicus, qui sequitur mutationem
-                consuetudium lectorum. Mirum est notare quam littera gothica,
-                quam nunc putamus parum claram, anteposuerit litterarum formas
-                humanita per seacula quarta decima et quinta decima. Eodem modo
-                typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-              </p>
+              <ul>
+                <li>Yodsmdnsmdms</li>
+                <li>Yodsmdnsmdms</li>
+                <li>Yodsmdnsmdms</li>
+                <li>Yodsmdnsmdms</li>
+              </ul>
             </div>
           </div>
         </div>

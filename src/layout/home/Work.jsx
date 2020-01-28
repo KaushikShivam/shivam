@@ -21,13 +21,13 @@ const Work = ({ topPortfolios, getTopPortfolios }) => {
                 <span>Work</span>
               </h3>
               <Link className="font-weight-bold" to="/portfolios">
-                VIEW ALL (88)
+                VIEW ALL
               </Link>
             </div>
             <p className="content-detail">
               Have a look at my projects in all its glory. They range from web
               design projects to fully fledged Full stack applications. You can
-              also have a look at the rest of my projects by{' '}
+              also have a look at the rest of my projects by
               <Link className="bold" to="/portfolios">
                 clicking here
               </Link>
