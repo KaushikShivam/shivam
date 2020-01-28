@@ -37,7 +37,7 @@ const Work = ({ topPortfolios, getTopPortfolios }) => {
           <div className="col-12">
             <div className="row mt-5">
               {topPortfolios.map(portfolio => (
-                <PortfolioItem key={portfolio.name} {...portfolio} />
+                <PortfolioItem key={portfolio.name} portfolio={portfolio} />
               ))}
             </div>
           </div>
