@@ -21,15 +21,17 @@ const Work = ({ topPortfolios, getTopPortfolios }) => {
                 <span>Work</span>
               </h3>
               <Link className="font-weight-bold" to="/portfolios">
-                VIEW ALL
+                VIEW ALL (88)
               </Link>
             </div>
             <p className="content-detail">
-              Ut wisi enim ad minim veniam, quis nostrud exerci tation
-              ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat, vel illum dolore eu
-              feugiat nulla facilisis at vero eros.
+              Have a look at my projects in all its glory. They range from web
+              design projects to fully fledged Full stack applications. You can
+              also have a look at the rest of my projects by{' '}
+              <Link className="bold" to="/portfolios">
+                clicking here
+              </Link>
+              .
             </p>
           </div>
           <div className="col-12">
