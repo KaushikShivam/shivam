@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+
+import { getPortfolios } from './../../redux/actions/portfolio';
+
 // import PortfolioItem from '../../components/PortfolioItem';
 
-const Work = () => {
-  const [portfolios, setPortfolios] = useState([]);
+const Work = ({ portfolios, getPortfolios }) => {
+  useEffect(() => {
+    getPortfolios();
+  }, [getPortfolios]);
 
   return (
     <section className="Work white-bg">
@@ -28,8 +34,10 @@ const Work = () => {
           </div>
           <div className="col-12">
             <div className="row mt-5">
-              {/* {this.state.portfolios.map(portfolio => (
-                <PortfolioItem key={portfolio.name} {...portfolio} />
+              {console.log(portfolios)}
+              {/* {portfolios.map(portfolio => (
+                // <PortfolioItem key={portfolio.name} {...portfolio} />
+                <p>{portfolio.name}</p>
               ))} */}
             </div>
           </div>
@@ -39,4 +47,8 @@ const Work = () => {
   );
 };
 
-export default Work;
+const mapStateToProps = state => ({
+  portfolios: state.portfolio.portfolios
+});
+
+export default connect(mapStateToProps, { getPortfolios })(Work);

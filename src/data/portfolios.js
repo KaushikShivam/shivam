@@ -1,4 +1,4 @@
-export default [
+const portfolios = [
   {
     skills: [
       'HTML5',
@@ -565,3 +565,5 @@ export default [
     rating: 18
   }
 ];
+
+export default portfolios;
