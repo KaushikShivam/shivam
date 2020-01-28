@@ -1,5 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
 // import PhotoGallery from '../components/PhotoGallery';
+
+import { getPortfolio } from './../redux/actions/portfolio';
 
 const photos = [
   {
@@ -121,4 +125,8 @@ const PortfolioDetail = () => {
   );
 };
 
-export default PortfolioDetail;
+const mapStateToProps = state => ({
+  portfolio: state.portfolio.portfolioItem
+});
+
+export default connect(mapStateToProps, { getPortfolio })(PortfolioDetail);
