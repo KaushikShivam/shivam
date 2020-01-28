@@ -17,7 +17,8 @@ export const getTopPortfolios = () => dispatch => {
 };
 
 export const getPortfolio = id => dispatch => {
-  const portfolio = portfolios.find(p => p.rating === id);
+  const rating = id * 1;
+  const portfolio = portfolios.find(p => p.rating === rating);
   dispatch({
     type: GET_PORTFOLIO,
     payload: { ...portfolio }

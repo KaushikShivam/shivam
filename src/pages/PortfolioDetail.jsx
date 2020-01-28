@@ -1,53 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 
 // import PhotoGallery from '../components/PhotoGallery';
 
 import { getPortfolio } from './../redux/actions/portfolio';
-
-const photos = [
-  {
-    src:
-      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/youtube1-1576520091309.png',
-    width: 800,
-    height: 426
-  },
-  {
-    src:
-      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/youtube2-1576520091330.png',
-    width: 800,
-    height: 426
-  },
-  {
-    src:
-      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/youtube3-1576520091401.png',
-    width: 800,
-    height: 426
-  }
-];
-
-const skills = [
-  'Node',
-  'React',
-  'SSR',
-  'Mongoose',
-  'Express',
-  'Authentication',
-  'Auth',
-  'Error handling',
-  'redux',
-  'redux-thunk',
-  'Node',
-  'React',
-  'SSR',
-  'Mongoose',
-  'Express',
-  'Authentication',
-  'Auth',
-  'Error handling',
-  'redux',
-  'redux-thunk'
-];
 
 const SkillItem = ({ skill }) => {
   return (
@@ -57,7 +13,12 @@ const SkillItem = ({ skill }) => {
   );
 };
 
-const PortfolioDetail = () => {
+const PortfolioDetail = ({ portfolioItem, getPortfolio, match }) => {
+  useEffect(() => {
+    getPortfolio(match.params.id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <main className="PortfolioDetail container padding-nav">
       {/* <PhotoGallery photos={photos} /> */}
@@ -115,9 +76,9 @@ const PortfolioDetail = () => {
         <div className="PortfolioDetail__skills">
           <h4>Skills</h4>
           <div className="content">
-            {skills.map(skill => (
+            {/* {skills.map(skill => (
               <SkillItem key={skill} skill={skill} />
-            ))}
+            ))} */}
           </div>
         </div>
       </div>
