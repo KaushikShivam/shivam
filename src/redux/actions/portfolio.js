@@ -20,6 +20,6 @@ export const getPortfolio = id => dispatch => {
   const portfolio = portfolios.find(p => p.rating === id);
   dispatch({
     type: GET_PORTFOLIO,
-    payload: portfolio
+    payload: { ...portfolio }
   });
 };

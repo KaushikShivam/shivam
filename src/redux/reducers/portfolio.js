@@ -1,8 +1,13 @@
-import { GET_PORTFOLIOS, GET_TOP_PORTFOLIOS } from './../actions/types';
+import {
+  GET_PORTFOLIOS,
+  GET_TOP_PORTFOLIOS,
+  GET_PORTFOLIO
+} from './../actions/types';
 
 const initialState = {
   portfolios: [],
-  topPortfolios: []
+  topPortfolios: [],
+  portfolioItem: null
 };
 
 const portfolioReducer = (state = initialState, action) => {
@@ -13,7 +18,8 @@ const portfolioReducer = (state = initialState, action) => {
       return { ...state, portfolios: payload };
     case GET_TOP_PORTFOLIOS:
       return { ...state, topPortfolios: payload };
-
+    case GET_PORTFOLIO:
+      return { ...state, portfolioItem: payload };
     default:
       return state;
   }
