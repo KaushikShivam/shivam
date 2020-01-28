@@ -5,6 +5,7 @@ import './App.css';
 
 // Pages
 import Homepage from './pages/Homepage';
+import PortfolioDetail from './pages/PortfolioDetail';
 
 // Components
 import Navbar from './layout/Navbar';
@@ -15,6 +16,7 @@ const App = () => {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Homepage} />
+        <Route exact path="/portfolios/:id" component={PortfolioDetail} />
       </Switch>
     </div>
   );
