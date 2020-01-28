@@ -6,7 +6,7 @@ import { getTopPortfolios } from './../../redux/actions/portfolio';
 
 // import PortfolioItem from '../../components/PortfolioItem';
 
-const Work = ({ portfolios, getTopPortfolios }) => {
+const Work = ({ topPortfolios, getTopPortfolios }) => {
   useEffect(() => {
     getTopPortfolios();
   }, [getTopPortfolios]);
@@ -34,7 +34,7 @@ const Work = ({ portfolios, getTopPortfolios }) => {
           </div>
           <div className="col-12">
             <div className="row mt-5">
-              {console.log(portfolios)}
+              {console.log(topPortfolios)}
               {/* {portfolios.map(portfolio => (
                 // <PortfolioItem key={portfolio.name} {...portfolio} />
                 <p>{portfolio.name}</p>
@@ -48,7 +48,7 @@ const Work = ({ portfolios, getTopPortfolios }) => {
 };
 
 const mapStateToProps = state => ({
-  portfolios: state.portfolio.portfolios
+  topPortfolios: state.portfolio.topPortfolios
 });
 
 export default connect(mapStateToProps, { getTopPortfolios })(Work);
