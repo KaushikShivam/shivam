@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
-// import PhotoGallery from '../components/PhotoGallery';
+import PhotoGallery from '../components/PhotoGallery';
 
 import { getPortfolio } from './../redux/actions/portfolio';
 
@@ -29,12 +29,19 @@ const PortfolioDetail = ({ portfolio, getPortfolio, match }) => {
         category,
         skills,
         live,
-        github
+        github,
+        images
       } = portfolio;
+
+      const photos = images.map(image => ({
+        src: image,
+        width: 800,
+        height: 426
+      }));
 
       return (
         <main className="PortfolioDetail container padding-nav">
-          {/* <PhotoGallery photos={photos} /> */}
+          <PhotoGallery photos={photos.length > 3 ? photos.slice(1) : photos} />
           <div className="PortfolioDetail__wrapper">
             <div className="row">
               <div className="col-lg-8">
