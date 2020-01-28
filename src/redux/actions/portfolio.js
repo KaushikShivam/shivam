@@ -9,10 +9,9 @@ export const getPortfolios = () => dispatch => {
 };
 
 export const getTopPortfolios = () => dispatch => {
-  const sortedPortfolio = portfolios.sort((a, b) => a.rating < b.rating);
-  console.log(sortedPortfolio);
+  const sortedPortfolio = portfolios.sort((a, b) => b.rating - a.rating);
   dispatch({
     type: GET_TOP_PORTFOLIOS,
-    payload: portfolios
+    payload: sortedPortfolio.slice(0, 6)
   });
 };

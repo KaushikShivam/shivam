@@ -2,14 +2,14 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import { getPortfolios } from './../../redux/actions/portfolio';
+import { getTopPortfolios } from './../../redux/actions/portfolio';
 
 // import PortfolioItem from '../../components/PortfolioItem';
 
-const Work = ({ portfolios, getPortfolios }) => {
+const Work = ({ portfolios, getTopPortfolios }) => {
   useEffect(() => {
-    getPortfolios();
-  }, [getPortfolios]);
+    getTopPortfolios();
+  }, [getTopPortfolios]);
 
   return (
     <section className="Work white-bg">
@@ -51,4 +51,4 @@ const mapStateToProps = state => ({
   portfolios: state.portfolio.portfolios
 });
 
-export default connect(mapStateToProps, { getPortfolios })(Work);
+export default connect(mapStateToProps, { getTopPortfolios })(Work);
