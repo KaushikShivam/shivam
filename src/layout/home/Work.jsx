@@ -25,13 +25,11 @@ const Work = ({ topPortfolios, getTopPortfolios }) => {
               </Link>
             </div>
             <p className="content-detail">
-              Have a look at my projects in all its glory. They range from web
-              design projects to fully fledged Full stack applications. You can
-              also have a look at the rest of my projects by
-              <Link className="bold" to="/portfolios">
-                clicking here
-              </Link>
-              .
+              My portfolio contains projects built with technologies ranging
+              from Web design landing pages to fully fleged full-stack
+              applications using the MERN stack, Firebase and Ruby on Rails.
+              <Link to="/portfolios">Click Here</Link> to view all of of the
+              projects in their glory.
             </p>
           </div>
           <div className="col-12">
