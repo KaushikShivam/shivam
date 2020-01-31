@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import Hero from '../layout/home/Hero';
 import Work from '../layout/home/Work';
 import Detail from '../layout/home/Detail';
+import Skill from '../layout/home/Skill';
 
 // Redux
 import { getWork } from './../redux/actions/work';
@@ -25,6 +26,7 @@ const Homepage = ({ works, getWork }) => {
           content="A multi-skilled leader with hands-on experience in developing, leading and cofounding tech startups by bringing together vision, strategy, and execution in a totally unstructured and resource-constrained environment."
           items={works}
         />
+        <Skill />
       </div>
     </div>
   );
