@@ -1,6 +1,15 @@
 import React from 'react';
 import SkillItem from '../../components/SkillItem';
 
+const skills = [
+  { name: 'React', percentage: '88%' },
+  { name: 'NodeJS', percentage: '80%' },
+  { name: 'MongoDB', percentage: '75%' },
+  { name: 'GraphQL', percentage: '68%' },
+  { name: 'NextJS', percentage: '68%' },
+  { name: 'Ruby On Rails', percentage: '75%' }
+];
+
 const Skill = () => {
   return (
     <section className="Skill white-bg">
@@ -11,18 +20,20 @@ const Skill = () => {
               <span>Skills</span>
             </h3>
             <p className="content-detail">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat.
+              In my years of experience, I've developed extensive knowledge in -
+              Full-stack development, Prototyping and Wireframing, mobile app
+              development and more. Here are my top skills.
             </p>
           </div>
           <div className="col-md-9">
             <div>
-              <SkillItem skillName="React" percentage="62%" />
-              <SkillItem skillName="Ruby on Rails" percentage="50%" />
-              <SkillItem skillName="NodeJS" percentage="82%" />
-              <SkillItem skillName="Ruby" percentage="42%" />
-              <SkillItem skillName="NextJS" percentage="92%" />
+              {skills.map(({ name, percentage }) => (
+                <SkillItem
+                  key={name}
+                  skillName={name}
+                  percentage={percentage}
+                />
+              ))}
             </div>
           </div>
         </div>
