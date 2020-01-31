@@ -2,8 +2,8 @@ import React from 'react';
 
 const DetailCard = ({ item: { company, role, duration, tasks } }) => {
   return (
-    <div className="DetailCard col-md-6">
-      <div>
+    <div className="DetailCard col-12">
+      <div className="h-100">
         <div className="DetailCard__wrapper">
           <div className="DetailCard__card">
             <h2 className="DetailCard__year">{duration}</h2>
