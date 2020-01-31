@@ -14,8 +14,8 @@ const Detail = ({ type, content, items }) => {
           </div>
           <div className="col-lg-9">
             <div className="row">
-              {items.map(item => (
-                <DetailCard key={item.name} item={item} />
+              {items.map((item, i) => (
+                <DetailCard key={i} item={item} />
               ))}
             </div>
           </div>
