@@ -1,9 +1,9 @@
-import { GET_WORK, SET_WORK } from './types';
+import { GET_WORK } from './types';
 import works from '../../data/works';
 
-const setWork = () => dispatch => {
+export const setWork = () => dispatch => {
   dispatch({
-    type: SET_WORK,
+    type: GET_WORK,
     payload: works
   });
 };
