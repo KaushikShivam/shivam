@@ -1,7 +1,7 @@
 import React from 'react';
 import DetailCard from '../../components/DetailCard';
 
-const Detail = ({ type, content }) => {
+const Detail = ({ type, content, items }) => {
   return (
     <section className="grey-bg">
       <div className="container p-sm-0">
@@ -14,10 +14,9 @@ const Detail = ({ type, content }) => {
           </div>
           <div className="col-lg-9">
             <div className="row">
-              <DetailCard />
-              <DetailCard />
-              <DetailCard />
-              <DetailCard />
+              {items.map(item => (
+                <DetailCard key={item.name} item={item} />
+              ))}
             </div>
           </div>
         </div>
