@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import logo from './../assets/images/logo.png';
+
 const Navbar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
 
@@ -9,11 +11,9 @@ const Navbar = () => {
   return (
     <div className={`Navbar ${menuToggle && 'Navbar--show'}`}>
       <div className="Navbar__sticky">
-        <div className="logo">
-          <Link className="Navbar__brand" to="/">
-            Shivam Kaushik
-          </Link>
-        </div>
+        <Link className="Navbar__brand" to="/">
+          <img src={logo} alt="Logo " />
+        </Link>
       </div>
       <div className="Navbar__nav">
         <nav className="Navbar__menu">

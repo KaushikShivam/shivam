@@ -16,23 +16,16 @@
     display: block;
     padding: 0px 15px 5px 15px;
     background: #ffffff;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
   }
 
   &__brand {
-    padding: 8px 0 10px 0;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
-    display: block;
-    font-size: 2rem;
-    font-weight: 500;
+
+    img {
+      padding-top: 5px;
+      width: 4rem;
+    }
   }
 
   // Hamburger Icon
@@ -52,9 +45,9 @@
     & span {
       display: block;
       position: absolute;
-      height: 1px;
+      height: 2px;
       width: 100%;
-      background: #2f2f2f;
+      background: #4A575F;
       border-radius: 9px;
       opacity: 1;
       left: 0;
