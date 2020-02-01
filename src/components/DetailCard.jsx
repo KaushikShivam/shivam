@@ -6,8 +6,8 @@ const DetailCard = ({ item: { company, role, duration, tasks } }) => {
       <div className="h-100">
         <div className="DetailCard__wrapper">
           <div className="DetailCard__card">
-            <h2 className="DetailCard__year">{duration}</h2>
-            <p className="DetailCard__job">{role}</p>
+            <h2 className="DetailCard__year">{role}</h2>
+            <p className="DetailCard__job">{duration}</p>
             <p className="DetailCard__company">{company}</p>
             <hr className="my-4" />
             <div className="DetailCard__text">

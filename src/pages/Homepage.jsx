@@ -10,10 +10,12 @@ import Skill from '../layout/home/Skill';
 
 // Redux
 import { getWork } from './../redux/actions/work';
+import { getEducation } from './../redux/actions/education';
 
-const Homepage = ({ works, getWork }) => {
+const Homepage = ({ works, educations, getWork, getEducation }) => {
   useEffect(() => {
     getWork();
+    getEducation();
   }, []);
 
   return (
@@ -27,13 +29,19 @@ const Homepage = ({ works, getWork }) => {
           items={works}
         />
         <Skill />
+        <Detail
+          type="Education & Voluteering"
+          content="A multi-skilled leader with hands-on experience in developing, leading and cofounding tech startups by bringing together vision, strategy, and execution in a totally unstructured and resource-constrained environment."
+          items={educations}
+        />
       </div>
     </div>
   );
 };
 
 const mapStateToProps = state => ({
-  works: state.work.works
+  works: state.work.works,
+  educations: state.education.educations
 });
 
-export default connect(mapStateToProps, { getWork })(Homepage);
+export default connect(mapStateToProps, { getWork, getEducation })(Homepage);
