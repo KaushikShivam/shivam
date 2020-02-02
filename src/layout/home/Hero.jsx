@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="row">
           <div className="Hero__wrapper">
             <div className="Hero__content">
-              <h1>Hello</h1>
+              <h1>Shivam</h1>
               <br />
               <span className="Hero__typed">
                 <Typed

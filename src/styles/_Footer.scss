@@ -121,31 +121,16 @@
   align-items: center;
   flex-direction: column;
 
+  & a {
+    color: rgb(192, 191, 191);
+  }
+
   img {
     width: 10rem;
   }
 
   p {
     color: white;
-  }
-
-  .icons {
-    list-style: none;
-    display: flex;
-    margin-top: 4rem;
-    margin-bottom: 0;
-  }
-
-  .icon {
-    font-size: 2rem;
-    color: rgb(172, 172, 172);
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    &:hover,
-    &:active {
-      color: white;
-    }
   }
 }
 
