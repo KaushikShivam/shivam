@@ -1,10 +1,12 @@
 import React from 'react';
 import Typed from 'react-typed';
 
+import Social from './../../components/Social';
+
 const Hero = () => {
   const roles = [
-    'Technical Support Engineer',
     'Full Stack Developer',
+    'Technical Support Engineer',
     'Founder',
     'Entrepreneur',
     'Mentor'
@@ -30,6 +32,7 @@ const Hero = () => {
                   className="Hero__typed--self"
                 />
               </span>
+              <Social />
             </div>
           </div>
           <div className="Hero__mouse">

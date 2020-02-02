@@ -9,6 +9,7 @@
 @import './DetailCard';
 @import './SkilItem';
 @import './Footer';
+@import './Social';
 
 *,
 *::before,
@@ -76,7 +77,7 @@ strong {
   overflow: hidden;
 }
 
-.row.container-height>[class*='col-'] {
+.row.container-height > [class*='col-'] {
   margin-bottom: -99999px;
   padding-bottom: 99999px;
 }

@@ -60,17 +60,17 @@ const Footer = () => {
         <ul className="icons">
           <li>
             <a target="_blank" href="https://www.linkedin.com/in/kShivamDev/">
-              <i class="fab fa-linkedin-in icon" />
+              <i className="fab fa-linkedin-in icon" />
             </a>
           </li>
           <li>
             <a target="_blank" href="https://github.com/KaushikShivam">
-              <i class="fab fa-github-alt icon" />
+              <i className="fab fa-github-alt icon" />
             </a>
           </li>
           <li>
             <a target="_blank" href="https://medium.com/@shivamkaushikofficial">
-              <i class="fab fa-medium-m icon" />
+              <i className="fab fa-medium-m icon" />
             </a>
           </li>
           <li>
@@ -78,17 +78,17 @@ const Footer = () => {
               target="_blank"
               href="https://stackoverflow.com/users/5197835/shivamkaushik"
             >
-              <i class="fab fa-stack-overflow icon" />
+              <i className="fab fa-stack-overflow icon" />
             </a>
           </li>
           <li>
             <a target="_blank" href="https://twitter.com/kShivamDev">
-              <i class="fab fa-twitter icon" />
+              <i className="fab fa-twitter icon" />
             </a>
           </li>
         </ul>
         <p className="copy">
-          Build with <i class="fas fa-heart icon"></i>
+          Build with <i className="fas fa-heart icon"></i>
           using the MERN stack
         </p>
       </div>
