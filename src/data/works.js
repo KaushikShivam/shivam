@@ -10,15 +10,6 @@ export default [
     ]
   },
   {
-    company: 'WealthGenie',
-    role: 'Founder | Full Stack Developer',
-    duration: 'Jan 2018 – Apr 2019',
-    tasks: [
-      'Produced a Lead generation chatbot for the real estate industry using the MERN stack and successfully deployed it on Facebook',
-      'Produced over 100+ hot leads for various Real Estate firms using the chatbot & Facebook marketing'
-    ]
-  },
-  {
     company: 'Chimes Group',
     role: 'Product Manager - SportyBay',
     duration: 'Jul 2016 – Nov 2018',
@@ -30,8 +21,17 @@ export default [
     ]
   },
   {
+    company: 'WealthGenie',
+    role: 'Founder | Full Stack Developer',
+    duration: 'Jan 2018 – Apr 2019',
+    tasks: [
+      'Produced a Lead generation chatbot for the real estate industry using the MERN stack and successfully deployed it on Facebook',
+      'Produced over 100+ hot leads for various Real Estate firms using the chatbot & Facebook marketing'
+    ]
+  },
+  {
     company: 'App Street Software',
-    role: 'Software Engineer (iOS)',
+    role: 'Software Engineer (iOS & Android)',
     duration: 'Jun 2016 – Aug 2016',
     tasks: [
       'Restructured and maintained the Volkswagen app and delivered timely updates',
