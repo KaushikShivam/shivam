@@ -7,33 +7,28 @@ const Footer = () => {
       <div className="footer-top">
         <ul className="socials">
           <li className="facebook">
-            <a href="#" data-hover="Facebook">
-              Facebook
+            <a href="#" data-hover="Linkedin">
+              Linkedin
             </a>
           </li>
           <li className="twitter">
-            <a href="#" data-hover="Twitter">
-              Twitter
+            <a href="#" data-hover="Github">
+              Github
             </a>
           </li>
           <li className="gplus">
-            <a href="#" data-hover="Google +">
-              Google +
+            <a href="#" data-hover="Angellist">
+              Angellist
             </a>
           </li>
           <li className="facebook">
-            <a href="#" data-hover="Facebook">
-              Facebook
+            <a href="#" data-hover="Medium">
+              Medium
             </a>
           </li>
           <li className="twitter">
-            <a href="#" data-hover="Twitter">
-              Twitter
-            </a>
-          </li>
-          <li className="gplus">
-            <a href="#" data-hover="Google +">
-              Google +
+            <a href="#" data-hover="Stackoverflow">
+              Stackoverflow
             </a>
           </li>
         </ul>
