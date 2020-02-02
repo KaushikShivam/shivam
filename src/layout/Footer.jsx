@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import logoWhite from './../assets/images/logo-white.png';
 
@@ -6,29 +7,49 @@ const Footer = () => {
     <footer>
       <div className="footer-top">
         <ul className="socials">
-          <li className="facebook">
-            <a href="#" data-hover="Linkedin">
+          <li className="linkedin">
+            <a
+              href="https://www.linkedin.com/in/kShivamDev/"
+              data-hover="Linkedin"
+              target="_blank"
+            >
               Linkedin
             </a>
           </li>
-          <li className="twitter">
-            <a href="#" data-hover="Github">
+          <li className="github">
+            <a
+              href="https://github.com/KaushikShivam"
+              target="_blank"
+              data-hover="Github"
+            >
               Github
             </a>
           </li>
-          <li className="gplus">
-            <a href="#" data-hover="Angellist">
+          <li className="angellist">
+            <a
+              href="https://angel.co/kshivamdev"
+              target="_blank"
+              data-hover="Angellist"
+            >
               Angellist
             </a>
           </li>
-          <li className="facebook">
-            <a href="#" data-hover="Medium">
+          <li className="medium">
+            <a
+              href="https://medium.com/@shivamkaushikofficial"
+              target="_blank"
+              data-hover="Medium"
+            >
               Medium
             </a>
           </li>
           <li className="twitter">
-            <a href="#" data-hover="Stackoverflow">
-              Stackoverflow
+            <a
+              href="https://twitter.com/kShivamDev"
+              target="_blank"
+              data-hover="twitter"
+            >
+              Twitter
             </a>
           </li>
         </ul>
@@ -36,7 +57,40 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <img src={logoWhite} alt="logo bottom" />
-        <p>Build with love using the MERN stack</p>
+        <ul className="icons">
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/kShivamDev/">
+              <i class="fab fa-linkedin-in icon" />
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/KaushikShivam">
+              <i class="fab fa-github-alt icon" />
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://medium.com/@shivamkaushikofficial">
+              <i class="fab fa-medium-m icon" />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://stackoverflow.com/users/5197835/shivamkaushik"
+            >
+              <i class="fab fa-stack-overflow icon" />
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/kShivamDev">
+              <i class="fab fa-twitter icon" />
+            </a>
+          </li>
+        </ul>
+        <p className="copy">
+          Build with <i class="fas fa-heart icon"></i>
+          using the MERN stack
+        </p>
       </div>
     </footer>
   );
