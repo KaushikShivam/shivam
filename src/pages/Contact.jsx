@@ -1,18 +1,50 @@
 import React, { useState } from 'react';
+import { wrapComponent } from 'react-snackbar-alert';
 
 import CustomInput from './../components/CustomInput';
 
-const Contact = () => {
+const Contact = ({ createSnackbar }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
   const handleSubmit = e => {
-    console.log('submit');
+    e.preventDefault();
+    sendFeedback({
+      user_name: email,
+      user_email: email,
+      user_message: message
+    });
+    setName('');
+    setEmail('');
+    setMessage('');
   };
 
-  const handleChange = e => {
-    console.log('change');
+  const sendFeedback = async variables => {
+    const templateId = 'contact_form';
+    try {
+      await window.emailjs.send('gmail', templateId, variables);
+      createSnackbar({ message: 'Email Sent' });
+    } catch (error) {
+      createSnackbar({ message: 'Email failed. Please try again' });
+    }
+  };
+
+  const handleChange = ({ target: { name, value } }) => {
+    switch (name) {
+      case 'name':
+        setName(value);
+        break;
+      case 'email':
+        setEmail(value);
+        break;
+      case 'message':
+        setMessage(value);
+        break;
+
+      default:
+        break;
+    }
   };
 
   return (
@@ -26,7 +58,6 @@ const Contact = () => {
             <p className="content-detail">
               Fill out the form to send me a message and get in touch.
             </p>
-            <p>Or visit my social links</p>
           </div>
           <div className="col-md-9 mt-4 mt-lg-0">
             <form onSubmit={handleSubmit}>
@@ -54,7 +85,7 @@ const Contact = () => {
                 id="sendMessage"
                 name="sendMessage"
                 type="submit"
-                value="Sign Up"
+                value="Submit"
               />
             </form>
           </div>
@@ -64,4 +95,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default wrapComponent(Contact);
