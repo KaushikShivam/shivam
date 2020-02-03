@@ -8,6 +8,7 @@ import './App.css';
 import Homepage from './pages/Homepage';
 import PortfolioDetail from './pages/PortfolioDetail';
 import Contact from './pages/Contact';
+import Certifications from './pages/Certifications';
 
 // Components
 import Navbar from './layout/Navbar';
@@ -21,6 +22,7 @@ const App = () => {
           <Route exact path="/" component={Homepage} />
           <Route exact path="/portfolios/:id" component={PortfolioDetail} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/certifications" component={Certifications} />
         </Switch>
       </div>
     </SnackbarProvider>
