@@ -26,7 +26,7 @@ const Contact = () => {
             <p className="content-detail">
               Fill out the form to send me a message and get in touch.
             </p>
-            <p>Alternatively you can connect with me on my social links</p>
+            <p>Or visit my social links</p>
           </div>
           <div className="col-md-9 mt-4 mt-lg-0">
             <form onSubmit={handleSubmit}>
