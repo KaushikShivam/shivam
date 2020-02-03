@@ -60,7 +60,7 @@ const Footer = () => {
         <img src={logoWhite} alt="logo bottom" />
         <Social />
         <p className="copy">
-          Build with <i className="fas fa-heart icon"></i>
+          Built with <i className="fas fa-heart icon"></i>
           using the MERN stack
         </p>
       </div>
