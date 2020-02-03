@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import CustomInput from './../components/CustomInput';
 
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = e => {
+    console.log('submit');
+  };
+
+  const handleChange = e => {
+    console.log('change');
+  };
+
   return (
     <main className="CustomForm">
       <div className="container">
@@ -14,35 +26,28 @@ const Contact = () => {
             <p className="content-detail">
               Fill out the form to send me a message and get in touch.
             </p>
-            <br />
             <p>Alternatively you can connect with me on my social links</p>
           </div>
           <div className="col-md-9 mt-4 mt-lg-0">
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={handleSubmit}>
               <CustomInput
                 name="name"
                 type="text"
-                value={this.state.name}
-                handleChange={this.handleChange}
+                value={name}
+                handleChange={handleChange}
               />
 
               <CustomInput
                 name="email"
                 type="email"
-                value={this.state.email}
-                handleChange={this.handleChange}
+                value={email}
+                handleChange={handleChange}
               />
               <CustomInput
-                name="password"
-                type="password"
-                value={this.state.password}
-                handleChange={this.handleChange}
-              />
-              <CustomInput
-                name="passwordConfirm"
-                type="password"
-                value={this.state.passwordConfirm}
-                handleChange={this.handleChange}
+                name="message"
+                type="text"
+                value={message}
+                handleChange={handleChange}
               />
 
               <input
