@@ -30,7 +30,7 @@ const Navbar = () => {
             <Link to="/blogs" onClick={handleClick}>
               <span>Blog</span>
             </Link>
-            <Link to="/" onClick={handleClick}>
+            <Link to="/contact" onClick={handleClick}>
               <span>Contact</span>
             </Link>
           </div>
