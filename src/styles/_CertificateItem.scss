@@ -1,0 +1,197 @@
+.CertificateItem {
+  &__container {
+    position: relative;
+    overflow: hidden;
+    display: inherit;
+    margin-bottom: 3rem;
+
+    img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      height: auto;
+      transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -o-transition: opacity 0.35s, -o-transform 0.35s;
+    }
+
+    &:hover img {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      transition: -webkit-transform 3s;
+      transition: transform 0.5s;
+    }
+  }
+
+  &__overlay &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 45rem;
+    z-index: 4;
+  }
+
+  &__overlay span {
+    position: relative;
+    z-index: 1;
+    line-height: 1.5rem;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+  }
+
+  &__container &__overlay:hover {
+    background-color: #646262d3;
+  }
+
+  &__container &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    border: none;
+    transition: all 0.5s ease-out;
+    z-index: 4;
+  }
+
+  .details span.title,
+  .details span.info {
+    color: white;
+  }
+
+  .details span.title {
+    font-size: 1.8rem;
+    letter-spacing: 1.2pt;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+  }
+
+  .details span.info {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__overlay &__btn--before,
+  &__overlay &__btn--after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: solid #818181;
+    border-width: 0;
+    transition: all ease-in-out;
+    -webkit-transition: all ease-in-out;
+    -moz-transition: all ease-in-out;
+    -o-transition: all ease-in-out;
+    -ms-transition: all ease-in-out;
+  }
+
+  &__overlay &__btn--before {
+    width: 0;
+    height: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__overlay &__btn--after {
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 0;
+  }
+
+  &__overlay:hover &__btn--before {
+    border-width: 0 0 3px 3px;
+  }
+
+  &__overlay:hover &__btn--after {
+    border-width: 3px 3px 0 0;
+  }
+
+  &__overlay:hover &__btn--after,
+  &__overlay:hover &__btn--before {
+    height: 100%;
+    width: 100%;
+    transition: width 0.5s ease, height 0.5s ease 0.5s,
+      border-top-right-radius 0.1s ease 0.4s,
+      border-bottom-left-radius 0.1s ease 0.4s,
+      border-bottom-right-radius 0.1s ease 0.9s,
+      border-top-left-radius 0.1s ease 0.9s;
+    -webkit-transition: width 0.5s ease, height 0.5s ease 0.5s,
+      border-top-right-radius 0.1s ease 0.4s,
+      border-bottom-left-radius 0.1s ease 0.4s,
+      border-bottom-right-radius 0.1s ease 0.9s,
+      border-top-left-radius 0.1s ease 0.9s;
+    -moz-transition: width 0.5s ease, height 0.5s ease 0.5s,
+      border-top-right-radius 0.1s ease 0.4s,
+      border-bottom-left-radius 0.1s ease 0.4s,
+      border-bottom-right-radius 0.1s ease 0.9s,
+      border-top-left-radius 0.1s ease 0.9s;
+    -o-transition: width 0.5s ease, height 0.5s ease 0.5s,
+      border-top-right-radius 0.1s ease 0.4s,
+      border-bottom-left-radius 0.1s ease 0.4s,
+      border-bottom-right-radius 0.1s ease 0.9s,
+      border-top-left-radius 0.1s ease 0.9s;
+    -ms-transition: width 0.5s ease, height 0.5s ease 0.5s,
+      border-top-right-radius 0.1s ease 0.4s,
+      border-bottom-left-radius 0.1s ease 0.4s,
+      border-bottom-right-radius 0.1s ease 0.9s,
+      border-top-left-radius 0.1s ease 0.9s;
+  }
+
+  &__overlay:hover:before,
+  &__overlay:hover span {
+    opacity: 1;
+  }
+
+  &__overlay:hover .details span {
+    top: 0;
+  }
+
+  &__overlay:hover .title {
+    transition-delay: 0.15s;
+  }
+
+  &__overlay:hover .info {
+    transition-delay: 0.25s;
+  }
+
+  /*Details on portfolio*/
+  .details {
+    padding: 2rem;
+    position: absolute;
+    bottom: -1.3rem;
+    left: 0;
+    z-index: 3;
+  }
+
+  .details span {
+    display: block;
+    position: relative;
+    top: 10rem;
+    transition-property: top, opacity;
+    transition-duration: 0.3s;
+    z-index: 100;
+  }
+
+  .details .title {
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+
+  .details .info {
+    line-height: 1.2;
+    letter-spacing: 1.5pt;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
