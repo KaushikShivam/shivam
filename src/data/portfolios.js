@@ -1,4 +1,5 @@
 const portfolios = [
+  // Web Design
   {
     skills: [
       'HTML5',
@@ -17,6 +18,9 @@ const portfolios = [
       'Fonts'
     ],
     images: [
+      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/smashing1-1576522960756.png',
+      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/smashing1-1576522960756.png',
+      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/smashing1-1576522960756.png',
       'https://shivamkaushik.s3.ap-south-1.amazonaws.com/smashing1-1576522960756.png'
     ],
     name: 'Smashing Magazine',
@@ -46,6 +50,9 @@ const portfolios = [
       'Custom Scripts'
     ],
     images: [
+      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/bootgrid1-1576524130690.png',
+      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/bootgrid1-1576524130690.png',
+      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/bootgrid1-1576524130690.png',
       'https://shivamkaushik.s3.ap-south-1.amazonaws.com/bootgrid1-1576524130690.png'
     ],
     name: 'Bootgrid',
@@ -70,6 +77,8 @@ const portfolios = [
     ],
     images: [
       'https://shivamkaushik.s3.ap-south-1.amazonaws.com/intuits1-1576521336307.png',
+      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/intuits1-1576521336307.png',
+      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/intuits1-1576521336307.png',
       'https://shivamkaushik.s3.ap-south-1.amazonaws.com/intuits2-1576521336307.png'
     ],
     name: 'Intuits',
@@ -92,6 +101,9 @@ const portfolios = [
       'Grid'
     ],
     images: [
+      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/apple1-1576522772893.png',
+      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/apple1-1576522772893.png',
+      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/apple1-1576522772893.png',
       'https://shivamkaushik.s3.ap-south-1.amazonaws.com/apple1-1576522772893.png'
     ],
     name: 'Apple website',
@@ -118,6 +130,7 @@ const portfolios = [
     images: [
       'https://shivamkaushik.s3.ap-south-1.amazonaws.com/youtube1-1576520091309.png',
       'https://shivamkaushik.s3.ap-south-1.amazonaws.com/youtube2-1576520091330.png',
+      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/youtube2-1576520091330.png',
       'https://shivamkaushik.s3.ap-south-1.amazonaws.com/youtube3-1576520091401.png'
     ],
     name: 'YouTube',
@@ -142,6 +155,8 @@ const portfolios = [
     ],
     images: [
       'https://shivamkaushik.s3.ap-south-1.amazonaws.com/bootstrap1-1576525669253.png',
+      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/bootstrap1-1576525669253.png',
+      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/bootstrap2-1576525669257.png',
       'https://shivamkaushik.s3.ap-south-1.amazonaws.com/bootstrap2-1576525669257.png'
     ],
     name: 'Bootstrap Practise',
@@ -376,6 +391,7 @@ const portfolios = [
     images: [
       'https://shivamkaushik.s3.ap-south-1.amazonaws.com/trillo1-1576527776227.png',
       'https://shivamkaushik.s3.ap-south-1.amazonaws.com/trillo2-1576527776230.png',
+      'https://shivamkaushik.s3.ap-south-1.amazonaws.com/trillo3-1576527776241.png',
       'https://shivamkaushik.s3.ap-south-1.amazonaws.com/trillo3-1576527776241.png'
     ],
     name: 'Trillo',
@@ -563,6 +579,601 @@ const portfolios = [
     live:
       'https://rawcdn.githack.com/KaushikShivam/Castle-landing-page/3bc8b446e45a992fc7af236495960a45eeae6de2/index.html',
     rating: 18
+  },
+  // Javascript
+  {
+    skills: [
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpacl',
+      'babel',
+      'Project',
+      'Udacity',
+      'Capstone',
+      'js',
+      'es6',
+      'sass',
+      'html'
+    ],
+    images: [
+      'https://ibb.co/M2FB15k',
+      'https://ibb.co/M2FB15k',
+      'https://ibb.co/M2FB15k',
+      'https://ibb.co/M2FB15k'
+    ],
+    name: 'Concentration',
+    subtitle: 'Memory Game',
+    description:
+      'Memory Game is also known under the name of "Concentration". Click the cards to make them flip around and show their symbol. If the symbols of the two flipped cards match, they stay turned and their colour changes. If they dont match, they will be flipped again and show their cardback.',
+    category: 'Javascript',
+    github: 'https://github.com/KaushikShivam/concentration',
+    live: 'https://lucid-haibt-546bda.netlify.com/',
+    rating: 21
+  },
+  {
+    skills: [
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/5YMCP55/rainman1.png',
+      'https://i.ibb.co/5YMCP55/rainman1.png',
+      'https://i.ibb.co/KrqPQBC/rainmain2.png',
+      'https://i.ibb.co/x7Y91y5/rainman3.png'
+    ],
+    name: 'RainMan',
+    subtitle: 'Weather App',
+    description:
+      'Rainman is a minimal weather app built using modern JS as well as babel and webpack.',
+    category: 'Javascript',
+    github: 'https://github.com/KaushikShivam/rain_man',
+    live: 'https://priceless-cori-e1d4a3.netlify.com/',
+    rating: 22
+  },
+  {
+    skills: [
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/Xj0bpSG/pig2.png',
+      'https://i.ibb.co/Xj0bpSG/pig2.png',
+      'https://i.ibb.co/b2tv5wQ/pig1.png',
+      'https://i.ibb.co/b2tv5wQ/pig1.png'
+    ],
+    name: 'Pig Game',
+    subtitle: 'Dice Game',
+    description:
+      'Pig Game is a classic dice pig game. The objective of the game is to score 100 points before the opponent does. The game is played with a single six-sided die.',
+    category: 'Javascript',
+    github: 'https://github.com/KaushikShivam/pig-game',
+    live: 'https://piggameofficial.netlify.com/',
+    rating: 23
+  },
+  {
+    skills: [
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/fST8rR4/restaurant1.png',
+      'https://i.ibb.co/fST8rR4/restaurant1.png',
+      'https://i.ibb.co/ZzJq1xz/restaurant2.png',
+      'https://i.ibb.co/PFkgy8C/restaurant3.png'
+    ],
+    name: 'LaBonte',
+    subtitle: 'Restaurant Page',
+    description:
+      'Restaurant Page is a Restaurant page project from the odin project that I built for Microverse. This uses Webpack and babel to bundle and transpile respectively. The project is built using modern JS features and follows a basic version of MCV architecture',
+    category: 'Javascript',
+    github: 'https://github.com/KaushikShivam/restaurant_page',
+    live:
+      'https://raw.githack.com/KaushikShivam/restaurant_page/feature-restaurant/dist/index.html',
+    rating: 24
+  },
+  {
+    skills: [
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/TLy2Qtd/budgety.png',
+      'https://i.ibb.co/TLy2Qtd/budgety.png',
+      'https://i.ibb.co/TLy2Qtd/budgety.png',
+      'https://i.ibb.co/TLy2Qtd/budgety.png'
+    ],
+    name: 'Budgety',
+    subtitle: 'Expense Tracker',
+    description:
+      'Budgety is a budget app build using pure Javascript that lets you add your income and expenses. It keeps track of your monthly budget, incomes and expenses. It also shows you the available budget for the month as well as the percentage of individual as well as total expenses in respect to the total income.',
+    category: 'Javascript',
+    github: 'https://github.com/KaushikShivam/budgety',
+    live: 'https://budgetyofficial.netlify.com/',
+    rating: 25
+  },
+  // React
+  {
+    skills: [
+      'React',
+      'React-component',
+      'create-react-app',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/vhW0hWr/rolldice.png',
+      'https://i.ibb.co/vhW0hWr/rolldice.png',
+      'https://i.ibb.co/vhW0hWr/rolldice.png',
+      'https://i.ibb.co/vhW0hWr/rolldice.png'
+    ],
+    name: 'Roll Dice',
+    subtitle: 'Dice App',
+    description:
+      'React Roll Dice can pick a random element from the array for each die, then update the state, causing the dice to re-render to the appropriate values.',
+    category: 'React',
+    github: 'https://github.com/KaushikShivam/roll-dice',
+    live: 'https://react-roll-dice.netlify.com/',
+    rating: 31
+  },
+  {
+    skills: [
+      'React',
+      'React-component',
+      'create-react-app',
+      'react router',
+      'react lifecycle',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/kQ1qGhn/carddealer.png',
+      'https://i.ibb.co/kQ1qGhn/carddealer.png',
+      'https://i.ibb.co/kQ1qGhn/carddealer.png',
+      'https://i.ibb.co/kQ1qGhn/carddealer.png'
+    ],
+    name: 'Card Dealer',
+    subtitle: 'Deal cards online',
+    description:
+      'Build an app that displays a deck of cards, one card at a time. When the page loads, send a request to https://deckofcardsapi.com/api/deck/new/shuffle to create a new deck. Store the Deck ID it gives you, so you can make further requests to retreive each card image. Add a button to your app that allows a user to draw a new card.',
+    category: 'React',
+    github: 'https://github.com/KaushikShivam/card_dealer',
+    live: 'https://carddealer.netlify.com/',
+    rating: 32
+  },
+  {
+    skills: [
+      'React',
+      'React-component',
+      'create-react-app',
+      'react router',
+      'react lifecycle',
+      'animations',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/xDC52Xn/pokedex.png',
+      'https://i.ibb.co/xDC52Xn/pokedex.png',
+      'https://i.ibb.co/xDC52Xn/pokedex.png',
+      'https://i.ibb.co/xDC52Xn/pokedex.png'
+    ],
+    name: 'Pokedex',
+    subtitle: 'Random card game',
+    description:
+      'Pokedex is a random pokemon video game that builds a list of 8 pokemon and randomly assign them into two hands of 4 cards each. It also calculates the total experience for each hand of pokemon and determines which hand is the “winner,” where the winning hand is the one with the higher total experience',
+    category: 'React',
+    github: 'https://github.com/KaushikShivam/pokedex',
+    live: 'https://react-pokodex.netlify.com/',
+    rating: 33
+  },
+  {
+    skills: [
+      'React',
+      'React-component',
+      'create-react-app',
+      'react router',
+      'react lifecycle',
+      'animations',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/ydkg9D2/calculator.png',
+      'https://i.ibb.co/ydkg9D2/calculator.png',
+      'https://i.ibb.co/ydkg9D2/calculator.png',
+      'https://i.ibb.co/ydkg9D2/calculator.png'
+    ],
+    name: 'React Calculator',
+    subtitle: 'Microverse Project',
+    description:
+      'React Calculator This is a small reactjs project that I built for the Microver JS course.',
+    category: 'React',
+    github: 'https://github.com/KaushikShivam/react-calculator',
+    live: 'https://blissful-brattain-2ea0d8.netlify.com/',
+    rating: 34
+  },
+  {
+    skills: [
+      'React',
+      'React-component',
+      'create-react-app',
+      'react router',
+      'react lifecycle',
+      'animations',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/nzwCDWZ/hangman4.png',
+      'https://i.ibb.co/p3G265H/hangman3.png',
+      'https://i.ibb.co/vsWMLHv/hangman2.png',
+      'https://i.ibb.co/gZM4Zhn/hangman1.png'
+    ],
+    name: 'HangMan',
+    subtitle: 'Udemy project',
+    description:
+      'This is an exercise project that lets you pratice with props, defaultProps, state, and simple click events and a lot more in React.',
+    category: 'React',
+    github: 'https://github.com/KaushikShivam/hangman',
+    live: 'https://youthful-lamport-b37d73.netlify.com/',
+    rating: 35
+  },
+  {
+    skills: [
+      'React',
+      'React-component',
+      'create-react-app',
+      'react router',
+      'react lifecycle',
+      'animations',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/R6cQtsX/todo1.png',
+      'https://i.ibb.co/R6cQtsX/todo1.png',
+      'https://i.ibb.co/cJNL16h/todo2.png',
+      'https://i.ibb.co/9sr79yk/todo3.png'
+    ],
+    name: 'ToDo',
+    subtitle: 'Task List App',
+    description:
+      'ToDO List is a Todo App that allows users to see, add, edit, and remove todos',
+    category: 'React',
+    github: 'https://github.com/KaushikShivam/todo_list',
+    live: 'https://todoofficial.netlify.com/',
+    rating: 36
+  },
+  {
+    skills: [
+      'React',
+      'React-component',
+      'create-react-app',
+      'react router',
+      'react lifecycle',
+      'animations',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/cXZzjkP/lights1.png',
+      'https://i.ibb.co/cXZzjkP/lights1.png',
+      'https://i.ibb.co/F71jJdJ/lights2.png',
+      'https://i.ibb.co/1sJ7sRw/lights3.png'
+    ],
+    name: 'Lights Out',
+    subtitle: 'Puzzle game',
+    description:
+      'Lights Out is a logic/puzzle game, played on a gird of individual lights, which can either be lit or unlit. The puzzle is won when when all of the lights are turned off.',
+    category: 'React',
+    github: 'https://github.com/KaushikShivam/lights-out',
+    live: 'https://lightsoutofficial.netlify.com/',
+    rating: 37
+  },
+  {
+    skills: [
+      'React',
+      'React-component',
+      'create-react-app',
+      'react router',
+      'react lifecycle',
+      'animations',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/Bgkrj6H/yahtzee.png',
+      'https://i.ibb.co/Bgkrj6H/yahtzee.png',
+      'https://i.ibb.co/yy851GL/yahtzee1.png',
+      'https://i.ibb.co/yy851GL/yahtzee1.png'
+    ],
+    name: 'Yahtzee',
+    subtitle: 'Strategy Game',
+    description:
+      'Yahtzee is a chance-and-strategy dice rolling game. A game is played over 13 rounds.  Each round, the player rolls five 6-sided dice. They may click on any number of dice to “freeze” or “unfreeze” them (frozen dice are displayed in a different color). They may re-roll the unfrozen dice up to 2 times.',
+    category: 'React',
+    github: 'https://github.com/KaushikShivam/yahtzee',
+    live: 'https://yahtzeeofficial.netlify.com/',
+    rating: 38
+  },
+  {
+    skills: [
+      'React',
+      'React-component',
+      'create-react-app',
+      'react router',
+      'react lifecycle',
+      'react-api',
+      'animations',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/26M71sH/1584365894507.png',
+      'https://i.ibb.co/Xz09R0j/dadjoke1.png',
+      'https://i.ibb.co/tHTdCVH/dadjokes2.png',
+      'https://i.ibb.co/mqFPM8P/dadjokes3.png'
+    ],
+    name: 'Dad Jokes',
+    subtitle: 'Funny Jokes App',
+    description:
+      'Dad Jokes is an app that lets people view and vote on cheesy jokes. When the page loads, it fetches 10 jokes.  The application lists the jokes, along with a “vote-up” button, a “vote-down” button, and the net score for each joke. Users can vote, and the net score should update.',
+    category: 'React',
+    github: 'https://github.com/KaushikShivam/dad_jokes',
+    live: 'https://dadjokesofficial.netlify.com/',
+    rating: 39
+  },
+  {
+    skills: [
+      'React',
+      'React-component',
+      'create-react-app',
+      'react router',
+      'react lifecycle',
+      'context-api',
+      'hooks',
+      'react-api',
+      'animations',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/gDxFLzr/github1.png',
+      'https://i.ibb.co/TcJX8Cs/github2.png',
+      'https://i.ibb.co/TcJX8Cs/github2.png',
+      'https://i.ibb.co/RgXnLLR/github3.png'
+    ],
+    name: 'Github Finder',
+    subtitle: 'Search App',
+    description:
+      'This project lets you search for Github users using the Github API. You can search for them using their name or username. The project uses modern React features such as Hooks, Context API etc. The App level state is managed using the modern Context API and Hooks instead of Redux.',
+    category: 'React',
+    github: 'https://github.com/KaushikShivam/github-finder',
+    live: 'https://pedantic-lalande-2a741d.netlify.com/',
+    rating: 40
+  },
+  {
+    skills: [
+      'React',
+      'redux',
+      'React-component',
+      'create-react-app',
+      'react router',
+      'react lifecycle',
+      'context-api',
+      'hooks',
+      'react-api',
+      'animations',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/KXNTSjR/bookstore1.png',
+      'https://i.ibb.co/gypcCTL/bookstore2.png',
+      'https://i.ibb.co/KXNTSjR/bookstore1.png',
+      'https://i.ibb.co/gypcCTL/bookstore2.png'
+    ],
+    name: 'Bookstore CMS',
+    subtitle: 'Library App',
+    description:
+      "Bookstore CMS let's your keep track of all the books that you own. It let's you add/remove/update the books. It is built using React and employs advanced state management technologies such as redux, routers etc. This is a project I built for the Microverse React course.",
+    category: 'React',
+    github: 'https://github.com/KaushikShivam/bookstore',
+    live: 'https://bookstoreofficial.netlify.com/',
+    rating: 41
+  },
+  {
+    skills: [
+      'React',
+      'redux',
+      'API',
+      'Ruby on rails',
+      'React-component',
+      'create-react-app',
+      'react router',
+      'react lifecycle',
+      'context-api',
+      'hooks',
+      'react-api',
+      'animations',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/DfCzHgJ/doctor1.png',
+      'https://i.ibb.co/c6SP800/doctor2.png',
+      'https://i.ibb.co/MfdDCHZ/doctor3.png',
+      'https://i.ibb.co/12mLs88/doctor4.png'
+    ],
+    name: 'Doctorly',
+    subtitle: 'Doctor Appointment App',
+    description:
+      "This is my capstone project at Microverse. It's a web app that let's you search the best doctors in your area and book appointments with them. The API for built using Ruby on Rails",
+    category: 'React',
+    github: 'https://github.com/KaushikShivam/doctor-react',
+    live: 'https://doctorly-official.herokuapp.com/',
+    rating: 42
   }
 ];
 
