@@ -13,6 +13,7 @@
 @import './CustomForm';
 @import './Header';
 @import './CertificateItem';
+@import './BlogItem';
 
 *,
 *::before,
@@ -80,7 +81,7 @@ strong {
   overflow: hidden;
 }
 
-.row.container-height > [class*='col-'] {
+.row.container-height>[class*='col-'] {
   margin-bottom: -99999px;
   padding-bottom: 99999px;
 }
