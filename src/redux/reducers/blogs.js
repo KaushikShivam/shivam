@@ -1,4 +1,4 @@
-const blogs = require('./../../data/blogs');
+import blogs from './../../data/blogs';
 
 const INITIAL_STATE = {
   blogs
@@ -10,3 +10,5 @@ const blogsReducer = (state = INITIAL_STATE, action) => {
       return state;
   }
 };
+
+export default blogsReducer;
