@@ -1,8 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Header from './../layout/Header';
 import CertificateItem from './../components/CertificateItem';
 
-const Certifications = () => {
+const Certifications = ({ certifications }) => {
   return (
     <main className="container padding-nav">
       <Header
@@ -11,15 +12,16 @@ const Certifications = () => {
         image="http://fc00.deviantart.net/fs71/i/2013/334/3/d/paperplane_wallpaper__full_hd__by_frangrgic-d6w6u49.png"
       />
       <div style={{ marginTop: '8rem' }} className="row">
-        <CertificateItem />
-        <CertificateItem />
-        <CertificateItem />
-        <CertificateItem />
-        <CertificateItem />
-        <CertificateItem />
+        {certifications.map(certification => (
+          <CertificateItem key={certification.id} {...certification} />
+        ))}
       </div>
     </main>
   );
 };
 
-export default Certifications;
+const mapStateToProps = state => ({
+  certifications: state.certifications.certifications
+});
+
+export default connect(mapStateToProps)(Certifications);
