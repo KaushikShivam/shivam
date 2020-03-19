@@ -10,6 +10,7 @@ import PortfolioDetail from './pages/PortfolioDetail';
 import Contact from './pages/Contact';
 import Certifications from './pages/Certifications';
 import Blogs from './pages/Blogs';
+import Portfolios from './pages/Portfolios';
 
 // Components
 import Navbar from './layout/Navbar';
@@ -21,6 +22,7 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Homepage} />
+          <Route exact path="/portfolios" component={Portfolios} />
           <Route exact path="/portfolios/:id" component={PortfolioDetail} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/certifications" component={Certifications} />
