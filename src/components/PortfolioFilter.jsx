@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 
-const PortfolioFilter = () => {
+const PortfolioFilter = ({ handleFilter }) => {
   const [toggle, setToggle] = useState(true);
 
-  const handleClick = () => setToggle(!toggle);
+  const handleToggle = () => setToggle(!toggle);
+
+  const handleSelect = e => {
+    handleFilter(e);
+  };
 
   return (
     <div className="PortfolioFilter">
       <button
         className={`PortfolioFilter__nav ${toggle && 'open'}`}
-        onClick={handleClick}
+        onClick={handleToggle}
       >
         <span className="PortfolioFilter__icons">
           <span className="line line01"></span>
@@ -19,12 +23,24 @@ const PortfolioFilter = () => {
         </span>
       </button>
       <div className={`PortfolioFilter__work ${toggle && 'open'}`}>
-        <button className="filter active">All</button>
-        <button className="filter">Ruby On Rails</button>
-        <button className="filter">React</button>
-        <button className="filter">MERN</button>
-        <button className="filter">NodeJS</button>
-        <button className="filter">NextJS</button>
+        <button onClick={handleSelect} className="filter active">
+          All
+        </button>
+        <button onClick={handleSelect} className="filter">
+          MERN
+        </button>
+        <button onClick={handleSelect} className="filter">
+          Node
+        </button>
+        <button onClick={handleSelect} className="filter">
+          React
+        </button>
+        <button onClick={handleSelect} className="filter">
+          Javascript
+        </button>
+        <button onClick={handleSelect} className="filter">
+          Web Design
+        </button>
       </div>
     </div>
   );
