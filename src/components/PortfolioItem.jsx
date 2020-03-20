@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const PortfolioItem = ({ portfolio }) => {
+  console.log(portfolio);
   const { name, images, subtitle } = portfolio;
   return (
     <div className="PortfolioItem col-md-6 col-lg-4 col-xs-12">
