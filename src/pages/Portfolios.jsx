@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
-import { Flipper, Flipped } from 'react-flip-toolkit';
-
 import Header from './../layout/Header';
 import PortfolioFilter from './../components/PortfolioFilter';
 import PortfolioItem from './../components/PortfolioItem';
@@ -27,26 +25,20 @@ const Portfolios = ({ portfolios, getPortfolios }) => {
     }
   };
 
-  const flipKeyIds = portfolioData.map(el => el.rating).join('');
-
   return (
-    <Flipper flipKey={flipKeyIds}>
-      <main className="Portfolios container padding-nav">
-        <Header
-          title="Portfolio"
-          subtitle="Beautiful Apps That Scale"
-          image="http://www.jubair.info/images/1.jpg"
-        />
-        <PortfolioFilter handleFilter={handleFilter} />
-        <div style={{ clear: 'both' }} className="row">
-          {portfolioData.map(portfolio => (
-            <Flipped key={portfolio.rating} flipId={portfolio.rating}>
-              <PortfolioItem portfolio={portfolio} />
-            </Flipped>
-          ))}
-        </div>
-      </main>
-    </Flipper>
+    <main className="Portfolios container padding-nav">
+      <Header
+        title="Portfolio"
+        subtitle="Beautiful Apps That Scale"
+        image="http://www.jubair.info/images/1.jpg"
+      />
+      <PortfolioFilter handleFilter={handleFilter} />
+      <div style={{ clear: 'both' }} className="row">
+        {portfolioData.map(portfolio => (
+          <PortfolioItem portfolio={portfolio} />
+        ))}
+      </div>
+    </main>
   );
 };
 
