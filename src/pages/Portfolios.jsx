@@ -17,7 +17,7 @@ const Portfolios = ({ portfolios, getPortfolios }) => {
   const handleFilter = e => {
     // console.log(e.target.textContent);
     const filter = e.target.textContent;
-    if (filter === 'All') {
+    if (filter === 'Top') {
       setPortfolioData(portfolios);
     } else {
       const filteredData = portfolios.filter(item => item.category === filter);

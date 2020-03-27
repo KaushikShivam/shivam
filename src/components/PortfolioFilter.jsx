@@ -24,16 +24,16 @@ const PortfolioFilter = ({ handleFilter }) => {
       </button>
       <div className={`PortfolioFilter__work ${toggle && 'open'}`}>
         <button onClick={handleSelect} className="filter active">
-          All
+          Top
         </button>
         <button onClick={handleSelect} className="filter">
           MERN
         </button>
         <button onClick={handleSelect} className="filter">
-          Node
+          React
         </button>
         <button onClick={handleSelect} className="filter">
-          React
+          Node
         </button>
         <button onClick={handleSelect} className="filter">
           Javascript
