@@ -597,10 +597,10 @@ const portfolios = [
       'html'
     ],
     images: [
-      'https://ibb.co/M2FB15k',
-      'https://ibb.co/M2FB15k',
-      'https://ibb.co/M2FB15k',
-      'https://ibb.co/M2FB15k'
+      'https://i.ibb.co/h73Yd1F/concentration1.png',
+      'https://i.ibb.co/h73Yd1F/concentration1.png',
+      'https://i.ibb.co/h73Yd1F/concentration1.png',
+      'https://i.ibb.co/h73Yd1F/concentration1.png'
     ],
     name: 'Concentration',
     subtitle: 'Memory Game',
@@ -1093,6 +1093,8 @@ const portfolios = [
     live: 'https://pedantic-lalande-2a741d.netlify.com/',
     rating: 40
   },
+  // TOP
+
   {
     skills: [
       'React',
@@ -1131,7 +1133,7 @@ const portfolios = [
     category: 'React',
     github: 'https://github.com/KaushikShivam/bookstore',
     live: 'https://bookstoreofficial.netlify.com/',
-    rating: 41
+    rating: 101
   },
   {
     skills: [
@@ -1173,7 +1175,121 @@ const portfolios = [
     category: 'React',
     github: 'https://github.com/KaushikShivam/doctor-react',
     live: 'https://doctorly-official.herokuapp.com/',
-    rating: 42
+    rating: 102
+  },
+  {
+    skills: [
+      'NodeJs',
+      'Express',
+      'Mongoose',
+      'MongoDB',
+      'Crud',
+      'Filtering',
+      'Pagination',
+      'Projection',
+      'Sorting',
+      'Aliasing',
+      'Aggregation',
+      'Advanced Modelling',
+      'Populating',
+      'Geoloaction',
+      'Authentication',
+      'Authorization',
+      'jwt',
+      'cors',
+      'rate-limiting',
+      'cookie',
+      'security',
+      'data sanitize',
+      'sendgrid',
+      'stripe',
+      'ssr',
+      'animations',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/bJQKK35/hikely1.png',
+      'https://i.ibb.co/fxbrzGM/hikely2.png',
+      'https://i.ibb.co/DCTgkKj/hikely3.png',
+      'https://i.ibb.co/xfp1v5T/hikely4.png'
+    ],
+    name: 'Hikely',
+    subtitle: 'Find your adventure',
+    description:
+      "At Hikely, you'll find the hikes that will make your life unforgettable. Whether you want to discover the Inca Trail or climb the Kilimanjaro, Hikely offers a wide and varied range of services. Here, no false promises are made, prices are transparent and every booking is confirmed immediately. Find, compare, book and trek.",
+    category: 'Node',
+    github: 'https://github.com/KaushikShivam/hikely',
+    live: 'http://hikelyofficial.herokuapp.com/',
+    rating: 103
+  },
+  {
+    skills: [
+      'React',
+      'Redux',
+      'stripe',
+      'Heroku',
+      'styled-components',
+      'session storage',
+      'firebase',
+      'API',
+      'NodeJs',
+      'React-component',
+      'create-react-app',
+      'react-router',
+      'react lifecycle',
+      'context-api',
+      'code splitting',
+      'code chunking',
+      'react lazy',
+      'react suspense',
+      'error boundaries',
+      'react memo',
+      'pure component',
+      'gzipping',
+      'hoc patterns',
+      'redux saga',
+      'pwc',
+      'hooks',
+      'react-api',
+      'animations',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Webpack',
+      'babel',
+      'es6',
+      'npm',
+      'module',
+      'package manager',
+      'eslint',
+      'linter',
+      'sass'
+    ],
+    images: [
+      'https://i.ibb.co/yWVV5kS/gamehub1.png',
+      'https://i.ibb.co/cykKVF6/gamehub2.png',
+      'https://i.ibb.co/80PxBnD/gamehub3.png',
+      'https://i.ibb.co/KmcZhb1/gamehub4.png'
+    ],
+    name: 'GameHub',
+    subtitle: 'Video Game Store',
+    description:
+      'GameHub is an e-commerce web application built using the MERN stack and firebase that lets you buy video games online. The application uses the following technologies',
+    category: 'React',
+    github: 'https://github.com/KaushikShivam/gamehub',
+    live: 'https://gamehubofficial.herokuapp.com/',
+    rating: 104
   }
 ];
 
