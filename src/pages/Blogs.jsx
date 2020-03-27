@@ -7,9 +7,9 @@ const Blogs = ({ blogs }) => {
   return (
     <main className="Blogs container padding-nav">
       <Header
-        title="Blogs"
+        title="Blog"
         subtitle="Tech stories I write"
-        image="http://www.thedesignwork.com/wp-content/uploads/2011/05/Minimalist-Wallpaper-05.jpg"
+        image="https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1574&q=80"
       />
       <div className="margin-big">
         {blogs.map(({ id, ...blog }) => (
