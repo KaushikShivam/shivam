@@ -1437,7 +1437,7 @@ const portfolios = [
     name: 'GameHub',
     subtitle: 'Video Game Store',
     description:
-      'GameHub is an e-commerce web application built using the MERN stack and firebase that lets you buy video games online. The application uses the following technologies',
+      'GameHub is an e-commerce web application built using the MERN stack and Firebase that lets you buy video games online. The application uses Firebase as the backend and employs advanced flux patterns',
     category: 'React',
     github: 'https://github.com/KaushikShivam/gamehub',
     live: 'https://gamehubofficial.herokuapp.com/',
