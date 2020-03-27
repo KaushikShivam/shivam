@@ -30,7 +30,7 @@ const Portfolios = ({ portfolios, getPortfolios }) => {
       <Header
         title="Portfolio"
         subtitle="Beautiful Apps That Scale"
-        image="http://www.jubair.info/images/1.jpg"
+        image="https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
       />
       <PortfolioFilter handleFilter={handleFilter} />
       <div style={{ clear: 'both' }} className="row">
