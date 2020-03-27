@@ -6,7 +6,7 @@ const Detail = ({ type, content, items }) => {
     <section className="grey-bg">
       <div className="container p-sm-0">
         <div className="row">
-          <div className="col-lg-3 mt-2r">
+          <div className="col-lg-3">
             <h3 className="title-small">
               <span>{type}</span>
             </h3>
