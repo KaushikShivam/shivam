@@ -21,8 +21,7 @@ const certifications = [
     title: 'React',
     info: 'The Modern React Bootcamp (Hooks, Context, NextJS, Router)',
     duration: 40,
-    image:
-      'https://i.ibb.co/Hdr0YR8/javascript.jpghttps://i.ibb.co/f9zr3CT/react-colt.jpg',
+    image: 'https://i.ibb.co/L9r57vH/react-cer.jpg',
     link: 'https://www.udemy.com/course/modern-react-bootcamp/'
   },
   {
